@@ -13,9 +13,9 @@
 		./plugins/telescope.nix
 		./plugins/treesitter.nix
 		./plugins/ts-comment.nix
-		
+
 		./settings/command.nix
 		./settings/general.nix
 		./settings/keys.nix
-	 ];
+	];
 }
