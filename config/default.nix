@@ -3,6 +3,7 @@
 		./plugins/autopair.nix
 		./plugins/bufferline.nix
 		./plugins/clangd.nix
+		./plugins/floaterm.nix
 		./plugins/hardtime.nix
 		./plugins/line.nix
 		./plugins/lsp.nix
