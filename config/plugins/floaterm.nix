@@ -1,6 +1,6 @@
 {
 	plugins.floaterm = {
-		enbale = true;
+		enable = true;
 		settings = {
 			height = 0.9;
 			keymap_kill = "<Leader>fk";
