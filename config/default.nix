@@ -13,6 +13,7 @@
 		./plugins/notify.nix
 		./plugins/telescope.nix
 		./plugins/treesitter.nix
+		./plugins/header.nix
 		./plugins/ts-comment.nix
 
 		./settings/command.nix
