@@ -7,6 +7,7 @@
 		./plugins/hardtime.nix
 		./plugins/line.nix
 		./plugins/lsp.nix
+		./plugins/neocord.nix
 		./plugins/neogen.nix
 		./plugins/neotree.nix
 		./plugins/noice.nix
