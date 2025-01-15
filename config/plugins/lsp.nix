@@ -1,7 +1,24 @@
 {
-	plugins.lsp = {
-		enable = true;
-		inlayHints = true;
+	plugins = {
+		lsp = {
+			enable = true;
+			inlayHints = true;
+		};
+		lsp-signature = {
+			enable = true;
+			settings = {
+				hint_prefix = "😼 ";
+			};
+		};
+		comment = {
+			enable = true;
+			settings = {
+				toggler = {
+					line = "<C-/>";
+				};
+				opleader.line = "<C-/>";
+			};
+		};
 	};
 
 	keymaps = [
