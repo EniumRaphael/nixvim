@@ -5,6 +5,7 @@
 		./plugins/autopair.nix
 		./plugins/bufferline.nix
 		./plugins/clangd.nix
+		./plugins/completion.nix
 		./plugins/floaterm.nix
 		./plugins/hardtime.nix
 		./plugins/line.nix
