@@ -3,7 +3,18 @@
 		enable = true;
 		settings = {
 			auto_install = true;
-			ensure_installed = "all";
+			ensureInstalled = [
+				"c"
+				"cpp"
+				"bash"
+				"rust"
+				"go"
+				"javascript"
+				"html"
+				"css"
+				"nix"
+				"make"
+			];
 		};
 	};
 }
