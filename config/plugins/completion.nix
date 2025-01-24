@@ -32,6 +32,15 @@
 						name = "luasnip";
 					}
 				];
+				mapping = {
+					"<Down>" = "cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert })";
+					"<Up>" = "cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert })";
+					"<C-d>" = "cmp.mapping.scroll_docs(-4)";
+					"<C-f>" = "cmp.mapping.scroll_docs(4)";
+					"<C-Space>" = "cmp.mapping.complete()";
+					"<Left>" = "cmp.mapping.abort()";
+					"<Right>" = "cmp.mapping.confirm({ select = true })";
+				};
 			};
 		};
 		cmp-ai.enable = true;
