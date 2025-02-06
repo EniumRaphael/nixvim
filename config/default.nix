@@ -2,24 +2,24 @@
 
 {
 	imports = [
+		./plugins/floaterm.nix
+		./plugins/telescope.nix
+		./plugins/hardtime.nix
 		./plugins/autopair.nix
 		./plugins/bufferline.nix
-		./plugins/clangd.nix
-		./plugins/completion.nix
-		./plugins/floaterm.nix
-		./plugins/hardtime.nix
-		./plugins/line.nix
-		./plugins/lsp.nix
-		./plugins/neocord.nix
 		./plugins/neogen.nix
-		./plugins/neotree.nix
-		./plugins/noice.nix
+		./plugins/neocord.nix
+		./plugins/hex.nix
 		./plugins/notify.nix
-		./plugins/telescope.nix
+		./plugins/noice.nix
+		./plugins/lsp.nix
 		./plugins/treesitter.nix
+		./plugins/clangd.nix
 		./plugins/ts-comment.nix
+		./plugins/line.nix
+		./plugins/completion.nix
+		./plugins/neotree.nix
 
-		./settings/command.nix
 		./settings/general.nix
 		./settings/keys.nix
 	];
