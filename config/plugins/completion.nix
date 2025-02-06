@@ -5,7 +5,7 @@
 			settings = {
 				sources = [
 					{
-						name = "ai";
+						name = "copilot";
 					}
 					{
 						name = "zsh";
@@ -43,7 +43,7 @@
 				};
 			};
 		};
-		cmp-ai.enable = true;
+		copilot-cmp.enable = true;
 		cmp-buffer.enable = true;
 		cmp-cmdline.enable = true;
 		cmp-emoji.enable = true;
