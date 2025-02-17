@@ -34,5 +34,14 @@
 				sha256 = "T4BdswmjlrR3KG+97mzncuJ/1OAvx7GDwXW6MI5fBNE=";
 			};
 		})
+		(pkgs.vimUtils.buildVimPlugin {
+			pname = "IncRename";
+			version = "latest";
+			src = pkgs.fetchgit {
+				url = "https://github.com/smjonas/inc-rename.nvim";
+				rev = "f9b9e5b9a75074810f40881b7e254b5bbeaf122e";
+				sha256 = "7XaYG2UUzFuvtmRALftDv2xlmR4xHF/OjhoGTz0mnl4=";
+			};
+		})
 	];
 }
