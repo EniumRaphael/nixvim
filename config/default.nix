@@ -17,6 +17,7 @@
 		./plugins/noice.nix
 		./plugins/notify.nix
 		./plugins/telescope.nix
+		./plugins/tmux-navigator.nix
 		./plugins/treesitter.nix
 		./plugins/ts-comment.nix
 		./plugins/wakkatime.nix
