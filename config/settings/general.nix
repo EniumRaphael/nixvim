@@ -3,6 +3,15 @@
 		settings.style = "mocha";
 		enable = true;
 	};
+	autoCmd = [
+		{
+			event = [
+				"BufRead" "BufNewFile"
+			];
+			pattern = "*.tpp";
+			command = "set filetype=cpp";
+		}
+	];
 	globals = {
 		mapleader = " ";
 		mail42 = "rparodi@student.42.fr";
@@ -15,7 +24,7 @@
 		ignorecase = true;
 		linebreak = true;
 		list = true;
-		listchars ="eol:↵,tab:→ ";
+		listchars = "eol:↵,tab:→ ";
 		mouse = "a";
 		number = true;
 		relativenumber = true;
