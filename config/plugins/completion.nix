@@ -5,6 +5,9 @@
 			settings = {
 				sources = [
 					{
+						name = "path";
+					}
+					{
 						name = "treesitter";
 					}
 					{
@@ -15,9 +18,6 @@
 					}
 					{
 						name = "buffer";
-					}
-					{
-						name = "path";
 					}
 					{
 						name = "cmdline";
