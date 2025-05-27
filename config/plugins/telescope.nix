@@ -54,12 +54,12 @@
 		{
 			mode = "n";
 			key = "<leader>gs";
-			action = "<cmd>Telescope git_status<cr>"
+			action = "<cmd>Telescope git_status prompt_prefix=📝:<cr>";
 		}
 		{
 			mode = "n";
 			key = "<leader>gb";
-			action = "<cmd>Telescope git_branch<cr>"
+			action = "<cmd>Telescope git_branch<cr> prompt_prefix=🎋:";
 		}
  	];
 }
