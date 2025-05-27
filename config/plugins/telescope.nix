@@ -2,17 +2,32 @@
 	plugins.telescope = {
 		enable = true;
 
-		settings.defaults = {
- 			file_ignore_patterns = [
-				"$.o"
- 				"$.d"
- 				"$.git"
- 				"a.out"
- 				"node_modules"
- 				"object"
- 				"objects"
- 			];
- 		};
+		settings = {
+			defaults = {
+				file_ignore_patterns = [
+					"$.o"
+					"$.d"
+					"$.git"
+					"a.out"
+					"node_modules"
+					"object"
+					"objects"
+				];
+			};
+			pickers = {
+				man_pages = [
+					"1"
+					"2"
+					"3"
+					"4"
+					"5"
+					"6"
+					"7"
+					"8"
+					"9"
+				];
+			};
+		};
  
  		extensions = {
  			fzf-native.enable = true;
@@ -49,7 +64,7 @@
 		{
 			mode = "n";
 			key = "<leader>m";
-			action = "<cmd>Telescope man_pages prompt_prefix=📖:<cr>";
+			action = "<cmd>lua require('telescope.builtin').man_pages({sections = { '1','2','3','4','5','6','7','8','9' },prompt_prefix = '📖:'})<cr>";
 		}
 		{
 			mode = "n";
