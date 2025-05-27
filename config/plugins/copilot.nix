@@ -20,4 +20,11 @@
 			};
 		};
 	};
+ 	keymaps = [
+ 		{
+			mode = "n";
+ 			key = "<leader>c";
+ 			action = "<cmd>Copilot panel<cr>";
+ 		}
+ 	];
 }
