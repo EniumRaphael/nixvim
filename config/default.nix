@@ -6,6 +6,7 @@
 		./plugins/bufferline.nix
 		./plugins/clangd.nix
 		./plugins/completion.nix
+		./plugins/copilot.nix
 		./plugins/floaterm.nix
 		./plugins/hardtime.nix
 		./plugins/hex.nix
