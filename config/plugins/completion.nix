@@ -5,7 +5,7 @@
 			settings = {
 				sources = [
 					{
-						name = "copilot";
+						name = "treesitter";
 					}
 					{
 						name = "zsh";
@@ -43,13 +43,13 @@
 				};
 			};
 		};
-		copilot-cmp.enable = true;
 		cmp-buffer.enable = true;
 		cmp-cmdline.enable = true;
 		cmp-emoji.enable = true;
 		cmp-git.enable = true;
 		cmp-nvim-lsp.enable = true;
 		cmp-path.enable = true;
+		cmp-treesitter.enable = true;
 		cmp-zsh.enable = true;
 		luasnip.enable = true;
 	};
