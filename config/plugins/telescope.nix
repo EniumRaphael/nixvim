@@ -23,17 +23,17 @@
  	keymaps = [
  		{
  			mode = "n";
- 			key = "<leader>f";
+ 			key = "<leader>ff";
  			action = "<cmd>Telescope find_files prompt_prefix=📂:<cr>";
  		}
  		{
  			mode = "n";
- 			key = "<leader>b";
+ 			key = "<leader>fb";
  			action = "<cmd>Telescope buffers prompt_prefix=🔖:<cr>";
  		}
  		{
  			mode = "n";
- 			key = "<leader>g";
+ 			key = "<leader>fg";
  			action = "<cmd>Telescope live_grep prompt_prefix=🪄:<cr>";
  		}
  		{
