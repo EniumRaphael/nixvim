@@ -16,6 +16,7 @@
  
  		extensions = {
  			fzf-native.enable = true;
+			undo.enable = true;
  		};
  	};
 
@@ -40,5 +41,25 @@
  			key = "<leader>T";
  			action = "<cmd>Telescope<cr>";
  		}
+		{
+			mode = "n";
+			key = "<leader>u";
+			action = "<cmd>Telescope undo prompt_prefix=⏪:<cr>";
+		}
+		{
+			mode = "n";
+			key = "<leader>m";
+			action = "<cmd>Telescope man_pages prompt_prefix=📖:<cr>";
+		}
+		{
+			mode = "n";
+			key = "<leader>gs";
+			action = "<cmd>Telescope git_status<cr>"
+		}
+		{
+			mode = "n";
+			key = "<leader>gb";
+			action = "<cmd>Telescope git_branch<cr>"
+		}
  	];
 }
