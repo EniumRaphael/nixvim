@@ -22,6 +22,7 @@
 		./plugins/treesitter.nix
 		./plugins/ts-comment.nix
 		./plugins/wakkatime.nix
+		./plugins/which-key.nix
 
 		./settings/general.nix
 		./settings/keys.nix
