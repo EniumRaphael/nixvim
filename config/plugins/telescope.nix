@@ -59,7 +59,7 @@
 		{
 			mode = "n";
 			key = "<leader>gb";
-			action = "<cmd>Telescope git_branches<cr> prompt_prefix=🎋:";
+			action = "<cmd>Telescope git_branches prompt_prefix=🎋:<cr>";
 		}
  	];
 }
