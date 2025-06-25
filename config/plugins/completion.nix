@@ -11,6 +11,9 @@
 						name = "treesitter";
 					}
 					{
+						name = "copilot";
+					}
+					{
 						name = "zsh";
 					}
 					{
@@ -43,6 +46,7 @@
 				};
 			};
 		};
+		copilot-cmp.enable = true;
 		cmp-buffer.enable = true;
 		cmp-cmdline.enable = true;
 		cmp-emoji.enable = true;

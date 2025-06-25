@@ -10,6 +10,7 @@
 		./plugins/floaterm.nix
 		./plugins/hardtime.nix
 		./plugins/hex.nix
+		./plugins/inc-rename.nix
 		./plugins/line.nix
 		./plugins/lsp.nix
 		./plugins/neocord.nix
@@ -35,15 +36,6 @@
 				url = "https://github.com/42Paris/42header.git";
 				rev = "9f51db5cc483951e257aece66f1f4ce3b14cdab1";
 				sha256 = "T4BdswmjlrR3KG+97mzncuJ/1OAvx7GDwXW6MI5fBNE=";
-			};
-		})
-		(pkgs.vimUtils.buildVimPlugin {
-			pname = "IncRename";
-			version = "latest";
-			src = pkgs.fetchgit {
-				url = "https://github.com/smjonas/inc-rename.nvim";
-				rev = "f9b9e5b9a75074810f40881b7e254b5bbeaf122e";
-				sha256 = "7XaYG2UUzFuvtmRALftDv2xlmR4xHF/OjhoGTz0mnl4=";
 			};
 		})
 	];
