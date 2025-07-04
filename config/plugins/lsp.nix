@@ -4,6 +4,9 @@
 			enable = true;
 			inlayHints = true;
 		};
+		nix = {
+			enable = true;
+		};
 		lsp-signature = {
 			enable = true;
 			settings = {
