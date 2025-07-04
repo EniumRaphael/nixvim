@@ -2,6 +2,7 @@
 
 {
 	imports = [
+		./plugins/actions-preview.nix
 		./plugins/autopair.nix
 		./plugins/bufferline.nix
 		./plugins/clangd.nix
