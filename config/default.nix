@@ -2,12 +2,12 @@
 
 {
 	imports = [
-		./plugins/actions-preview.nix
 		./plugins/autopair.nix
 		./plugins/bufferline.nix
 		./plugins/clangd.nix
 		./plugins/completion.nix
 		./plugins/copilot.nix
+		./plugins/fastaction.nix
 		./plugins/floaterm.nix
 		./plugins/hardtime.nix
 		./plugins/hex.nix
