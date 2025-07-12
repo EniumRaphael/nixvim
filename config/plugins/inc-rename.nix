@@ -6,7 +6,7 @@
 		{
 			mode = "n";
 			key = "<leader>r";
-			action = "<cmd>IncRename ";
+			action = ":IncRename ";
 		}
 	];
 }
