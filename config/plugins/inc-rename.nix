@@ -1,12 +1,12 @@
 {
-	plugins.inc-rename = {
-		enable = true;
-	};
-	keymaps = [
-		{
-			mode = "n";
-			key = "<leader>r";
-			action = ":IncRename ";
-		}
-	];
+  plugins.inc-rename = {
+    enable = true;
+  };
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>r";
+      action = ":IncRename ";
+    }
+  ];
 }

@@ -1,13 +1,13 @@
 {
-	plugins.neogen = {
-		enable = true;
-	};
+  plugins.neogen = {
+    enable = true;
+  };
 
-	keymaps = [
-		{
-			mode = "n";
-			key = "<leader>d";
-			action = "<cmd>Neogen<cr>";
-		}
-	];
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>d";
+      action = "<cmd>Neogen<cr>";
+    }
+  ];
 }

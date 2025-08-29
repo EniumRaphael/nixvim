@@ -1,5 +1,5 @@
 {
-	plugins.hex = {
-		enable = true;
-	};
+  plugins.hex = {
+    enable = true;
+  };
 }
