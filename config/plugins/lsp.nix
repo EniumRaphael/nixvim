@@ -4,7 +4,7 @@
 			enable = true;
 			inlayHints = true;
 			servers = {
-				arduino_language_server = true;
+				arduino_language_server.enable = true;
 				asm_lsp.enable = true;
 				clangd.enable = true;
 				eslint.enable = true;
