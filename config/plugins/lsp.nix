@@ -3,6 +3,12 @@
 		lsp = {
 			enable = true;
 			inlayHints = true;
+			servers = {
+				arduino_language_server = true;
+				asm_lsp.enable = true;
+				clangd.enable = true;
+				eslint.enable = true;
+			}
 		};
 		nix = {
 			enable = true;
