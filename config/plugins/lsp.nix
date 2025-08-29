@@ -8,7 +8,7 @@
 				asm_lsp.enable = true;
 				clangd.enable = true;
 				eslint.enable = true;
-			}
+			};
 		};
 		nix = {
 			enable = true;
