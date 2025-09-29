@@ -92,7 +92,7 @@
     }
     {
       mode = "n";
-      key = "<leader><esc>";
+      key = "<esc><esc>";
       action = "<cmd>nohl<cr>";
     }
     {
