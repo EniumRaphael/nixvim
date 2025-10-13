@@ -1,6 +1,18 @@
 {
   colorschemes.catppuccin = {
-    settings.style = "mocha";
+    settings = {
+      style = "mocha";
+      integrations = {
+        lualine = true;
+        bufferline = true;
+        treesitter = true;
+        cmp = true;
+        gitsigns = true;
+        nvimtree = true;
+        telescope = true;
+        notify = true;
+      };
+    };
     enable = true;
   };
   autoCmd = [
