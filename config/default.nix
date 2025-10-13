@@ -2,6 +2,9 @@
 
 {
   imports = [
+    ./settings/general.nix
+    ./settings/keys.nix
+
     ./plugins/autopair.nix
     ./plugins/bufferline.nix
     ./plugins/clangd.nix
@@ -25,9 +28,6 @@
     ./plugins/ts-comment.nix
     ./plugins/wakkatime.nix
     ./plugins/which-key.nix
-
-    ./settings/general.nix
-    ./settings/keys.nix
   ];
   extraPlugins = [
     (pkgs.vimUtils.buildVimPlugin {
