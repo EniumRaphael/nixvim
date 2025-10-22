@@ -14,7 +14,6 @@
     ./plugins/floaterm.nix
     ./plugins/hardtime.nix
     ./plugins/hex.nix
-    ./plugins/inc-rename.nix
     ./plugins/line.nix
     ./plugins/lsp.nix
     ./plugins/neocord.nix
