@@ -5,7 +5,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>a";
+      key = "<leader>ca";
       action = "<cmd>lua require('fastaction').code_action()<CR>";
     }
   ];
