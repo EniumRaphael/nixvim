@@ -1,5 +1,6 @@
 {
   plugins = {
+    colorizer.enable = true;
     lsp = {
       enable = true;
       inlayHints = true;
@@ -138,6 +139,22 @@
     nix = {
       enable = true;
     };
+    trouble = {
+      enable = true;
+      settings = {
+        position = "bottom";
+        height = 12;
+        width = 50;
+        mode = "workspace_diagnostics";
+        fold_open = "";
+        fold_closed = "";
+        group = true;
+        padding = true;
+        auto_preview = false;
+        auto_fold = false;
+        use_diagnostic_signs = true;
+      };
+    };
     lsp-signature = {
       enable = true;
       settings.hint_prefix = "😼 ";
@@ -153,38 +170,21 @@
   keymaps = [
     {
       mode = "n";
-      key = "gd";
-      action = "<cmd>lua vim.lsp.buf.definition()<cr>";
+      key = "<leader>cd";
+      action = "<cmd>Trouble diagnostics toggle<cr>";
+      options.desc = "Diagnostics du workspace";
     }
     {
       mode = "n";
-      key = "gr";
-      action = "<cmd>lua vim.lsp.buf.references()<cr>";
+      key = "<leader>ct";
+      action = "<cmd>Trouble diagnostics toggle filter.buf=0<cr>";
+      options.desc = "Diagnostics du document";
     }
-    {
-      mode = "n";
-      key = "gi";
-      action = "<cmd>lua vim.lsp.buf.implementation()<cr>";
-    }
-    {
-      mode = "n";
-      key = "K";
-      action = "<cmd>lua vim.lsp.buf.hover()<cr>";
-    }
-    {
-      mode = "n";
-      key = "<C-k>";
-      action = "<cmd>lua vim.lsp.buf.signature_help()<cr>";
-    }
-    {
-      mode = "n";
-      key = "<leader>rn";
-      action = "<cmd>lua vim.lsp.buf.rename()<cr>";
-    }
-    {
-      mode = "n";
-      key = "<leader>ca";
-      action = "<cmd>lua vim.lsp.buf.code_action()<cr>";
+ {
+     mode = "n";
+      key = "<leader>cr";
+      action = "<cmd>Trouble lsp toggle focus=false win.position=right<cr>";
+      options.desc = "Références LSP";
     }
   ];
 }
