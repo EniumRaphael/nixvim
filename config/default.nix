@@ -20,7 +20,6 @@
     ./plugins/neogen.nix
     ./plugins/neotree.nix
     ./plugins/noice.nix
-    ./plugins/notify.nix
     ./plugins/telescope.nix
     ./plugins/tmux-navigator.nix
     ./plugins/treesitter.nix
