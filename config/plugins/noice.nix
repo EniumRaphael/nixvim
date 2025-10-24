@@ -1,5 +1,6 @@
 {
   plugins = {
+    notify.enable = true;
     noice = {
       enable = true;
       settings = {
