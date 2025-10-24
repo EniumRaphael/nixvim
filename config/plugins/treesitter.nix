@@ -14,5 +14,123 @@
         indent.enable = true;
       };
     };
+    statuscol = {
+      enable = true;
+      settings = {
+        relculright = true;
+        setopt = true;
+        segments = [
+          {
+            sign = {
+              name = [ "Diagnostic" "GitSigns" ];
+              maxwidth = 2;
+              auto = true;
+            };
+            click = "v:lua.ScSa";
+          }
+          {
+            text = [ "%s" ];
+          }
+          {
+            text = [ " " ];
+          }
+          {
+            text = [ "%l" ];
+            condition = [ { __raw = "vim.wo.number"; } ];
+          }
+          {
+            text = [
+              {
+                __raw = ''
+              function()
+                local foldlevel = vim.fn.foldlevel(vim.v.lnum)
+                local foldclosed = vim.fn.foldclosed(vim.v.lnum)
+                local foldlevel_before = vim.fn.foldlevel(vim.v.lnum - 1)
+
+                if foldlevel == 0 then
+                  return " "
+                end
+                if foldclosed ~= -1 and foldclosed == vim.v.lnum then
+                  return ""
+                end
+                if foldlevel > foldlevel_before then
+                  return ""
+                end
+                return " "
+              end
+              '';
+              }
+            ];
+            click = "v:lua.ScFa";
+          }
+          {
+            text = [ "  " ];
+          }
+        ];
+      };
+    };
+  gitsigns = {
+    enable = true;
+      settings = {
+        signs = {
+          add = {
+            text = "";
+          };
+          change = {
+            text = "";
+          };
+          changedelete = {
+            text = "";
+          };
+          delete = {
+            text = "";
+          };
+          topdelete = {
+            text = "";
+          };
+          untracked = {
+            text = "";
+          };
+        };
+        watch_gitdir = {
+          follow_files = true;
+        };
+      };
+    };
+    origami.enable = true;
+  };
+  extraConfigLua = ''
+    local signs = {
+      Error = " ",
+      Warn  = " ",
+      Hint  = "󰌶 ",
+      Info  = " ",
+    }
+    for type, icon in pairs(signs) do
+      local hl = "DiagnosticSign" .. type
+      vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+    end
+
+    -- DAP signs
+    vim.fn.sign_define("DapBreakpoint", { text = "", texthl = "DiagnosticError", numhl = "" })
+    vim.fn.sign_define("DapStopped", { text = "", texthl = "DiagnosticWarn", numhl = "" })
+    vim.fn.sign_define("DapBreakpointRejected", { text = "", texthl = "DiagnosticHint", numhl = "" })
+    vim.fn.sign_define("DapBreakpointCondition", { text = "", texthl = "DiagnosticInfo", numhl = "" })
+    function _G.ScFa(minwid, click, btn, mods)
+      local line = vim.fn.line('.')
+      if vim.fn.foldclosed(line) ~= -1 then
+        vim.cmd('normal! zo')
+      else
+        vim.cmd('normal! zc')
+      end
+    end
+    '';
+  opts = {
+    number = true;
+    relativenumber = true;
+    foldcolumn = "1";
+    foldenable = true;
+    foldlevel = 99;
+    foldlevelstart = 99;
   };
 }
