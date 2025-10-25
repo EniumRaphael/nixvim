@@ -106,11 +106,6 @@
       },
     })
 
-    -- DAP signs
-    vim.fn.sign_define("DapBreakpoint", { text = "", texthl = "DiagnosticError", numhl = "" })
-    vim.fn.sign_define("DapStopped", { text = "", texthl = "DiagnosticWarn", numhl = "" })
-    vim.fn.sign_define("DapBreakpointRejected", { text = "", texthl = "DiagnosticHint", numhl = "" })
-    vim.fn.sign_define("DapBreakpointCondition", { text = "", texthl = "DiagnosticInfo", numhl = "" })
     function _G.ScFa(minwid, click, btn, mods)
       local line = vim.fn.line('.')
       if vim.fn.foldclosed(line) ~= -1 then
