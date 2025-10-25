@@ -18,7 +18,8 @@
   autoCmd = [
     {
       event = [
-        "BufRead" "BufNewFile"
+        "BufRead"
+        "BufNewFile"
       ];
       pattern = "*.tpp";
       command = "set filetype=cpp";
