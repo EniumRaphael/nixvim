@@ -26,10 +26,8 @@
               maxwidth = 2;
               auto = true;
             };
-            click = "v:lua.ScSa";
-          }
-          {
             text = [ "%s" ];
+            click = "v:lua.ScSa";
           }
           {
             text = [ " " ];
