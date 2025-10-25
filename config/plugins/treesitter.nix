@@ -45,9 +45,6 @@
                 local foldclosed = vim.fn.foldclosed(vim.v.lnum)
                 local foldlevel_before = vim.fn.foldlevel(vim.v.lnum - 1)
 
-                if foldlevel == 0 then
-                  return " "
-                end
                 if foldclosed ~= -1 and foldclosed == vim.v.lnum then
                   return ""
                 end
