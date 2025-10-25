@@ -92,7 +92,13 @@
         };
       };
     };
-    origami.enable = true;
+    origami = {
+      enable = true;
+      settings = {
+        pauseFoldsOnSearch = true;
+        setupFoldKeymaps = false;
+      };
+    };
   };
   extraConfigLua = ''
     vim.diagnostic.config({
