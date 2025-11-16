@@ -92,13 +92,6 @@
         };
       };
     };
-    origami = {
-      enable = true;
-      settings = {
-        pauseFoldsOnSearch = true;
-        setupFoldKeymaps = false;
-      };
-    };
   };
   extraConfigLua = ''
     vim.diagnostic.config({
@@ -124,6 +117,8 @@
   opts = {
     number = true;
     relativenumber = true;
+    foldmethod = "expr";
+    foldexpr = "nvim_treesitter#foldexpr()";
     foldcolumn = "1";
     foldenable = true;
     foldlevel = 99;
