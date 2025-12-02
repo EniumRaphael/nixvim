@@ -25,10 +25,11 @@
           cmd = [
             "asm-lsp"
           ];
-          on_attach = ''
-            vim.env.ASM_LSP_CONFIG = vim.fn.getcwd() .. "/asm-lsp.toml"
-          '';
-        };
+          onAttach = {
+            function = ''
+              vim.env.ASM_LSP_CONFIG = vim.fn.getcwd() .. "/asm-lsp.toml"
+            '';
+          };        };
         clangd = {
           enable = true;
           cmd = [
