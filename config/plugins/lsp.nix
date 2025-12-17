@@ -58,6 +58,15 @@
             };
           };
         };
+        pyright = {
+          enable = true;
+          settings.python.analysis = {
+            autoSearchPath = true;
+            diagnosticsMode = "workspace";
+            useLibraryCodeForTypes = true;
+            typeCheckingMode = "basic";
+          };
+        };
         rust_analyzer = {
           enable = true;
           installRustc = true;
