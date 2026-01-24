@@ -16,6 +16,7 @@
     ./plugins/hex.nix
     ./plugins/line.nix
     ./plugins/lsp.nix
+    ./plugins/markview.nix
     ./plugins/neocord.nix
     ./plugins/neogen.nix
     ./plugins/neotree.nix
