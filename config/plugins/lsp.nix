@@ -77,6 +77,9 @@
               allFeatures = true;
               buildScripts.enable = true;
             };
+            diagnostics = {
+              disabled = [ "unlinked-file" ];
+            };
             procMacro.enable = true;
             imports = {
               granularity.group = "module";
