@@ -74,6 +74,7 @@
           settings = {
             check.command = "clippy";
             cargo = {
+              rust.rustcSource = "discover";
               allFeatures = true;
               buildScripts.enable = true;
             };
