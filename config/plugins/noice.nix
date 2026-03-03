@@ -57,9 +57,9 @@
         preview_empty_name = false;
         show_message = {
           __raw = ''
-          function(msg)
-            vim.notify(msg, vim.log.levels.INFO, { title = "Rename" })
-          end
+            function(msg)
+              vim.notify(msg, vim.log.levels.INFO, { title = "Rename" })
+            end
           '';
         };
       };
