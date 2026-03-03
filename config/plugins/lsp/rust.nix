@@ -16,7 +16,7 @@ plugins.lsp.servers.rust_analyzer = {
       };
       allFeatures = true;
       buildScripts = {
-        enable = true
+        enable = true;
       };
       features = "all";
       loadOutDirsFromCheck = true;
