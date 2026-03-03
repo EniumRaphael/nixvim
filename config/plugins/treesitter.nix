@@ -22,7 +22,10 @@
         segments = [
           {
             sign = {
-              name = [ "Diagnostic" "GitSigns" ];
+              name = [
+                "Diagnostic"
+                "GitSigns"
+              ];
               maxwidth = 2;
               auto = true;
             };
@@ -40,20 +43,20 @@
             text = [
               {
                 __raw = ''
-              function()
-                local foldlevel = vim.fn.foldlevel(vim.v.lnum)
-                local foldclosed = vim.fn.foldclosed(vim.v.lnum)
-                local foldlevel_before = vim.fn.foldlevel(vim.v.lnum - 1)
+                  function()
+                    local foldlevel = vim.fn.foldlevel(vim.v.lnum)
+                    local foldclosed = vim.fn.foldclosed(vim.v.lnum)
+                    local foldlevel_before = vim.fn.foldlevel(vim.v.lnum - 1)
 
-                if foldclosed ~= -1 and foldclosed == vim.v.lnum then
-                  return ""
-                end
-                if foldlevel > foldlevel_before then
-                  return ""
-                end
-                return " "
-              end
-              '';
+                    if foldclosed ~= -1 and foldclosed == vim.v.lnum then
+                      return ""
+                    end
+                    if foldlevel > foldlevel_before then
+                      return ""
+                    end
+                    return " "
+                  end
+                '';
               }
             ];
             click = "v:lua.ScFa";
@@ -64,8 +67,8 @@
         ];
       };
     };
-  gitsigns = {
-    enable = true;
+    gitsigns = {
+      enable = true;
       settings = {
         signs = {
           add = {
@@ -113,7 +116,7 @@
         vim.cmd('normal! zc')
       end
     end
-    '';
+  '';
   opts = {
     number = true;
     relativenumber = true;
