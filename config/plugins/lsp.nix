@@ -29,7 +29,8 @@
             function = ''
               vim.env.ASM_LSP_CONFIG = vim.fn.getcwd() .. "/asm-lsp.toml"
             '';
-          };        };
+          };
+        };
         clangd = {
           enable = true;
           cmd = [
@@ -200,8 +201,8 @@
       action = "<cmd>Trouble diagnostics toggle filter.buf=0<cr>";
       options.desc = "Diagnostics du document";
     }
- {
-     mode = "n";
+    {
+      mode = "n";
       key = "<leader>cr";
       action = "<cmd>Trouble lsp toggle focus=false win.position=right<cr>";
       options.desc = "Références LSP";
