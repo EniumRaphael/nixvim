@@ -28,34 +28,34 @@
         ];
       };
     };
- 
-     extensions = {
-       fzf-native.enable = true;
-      undo.enable = true;
-     };
-   };
 
-   keymaps = [
-     {
-       mode = "n";
-       key = "<leader>ff";
-       action = "<cmd>Telescope find_files prompt_prefix=📂:<cr>";
-     }
-     {
-       mode = "n";
-       key = "<leader>fb";
-       action = "<cmd>Telescope buffers prompt_prefix=🔖:<cr>";
-     }
-     {
-       mode = "n";
-       key = "<leader>fg";
-       action = "<cmd>Telescope live_grep prompt_prefix=🪄:<cr>";
-     }
-     {
-       mode = "n";
-       key = "<leader>T";
-       action = "<cmd>Telescope<cr>";
-     }
+    extensions = {
+      fzf-native.enable = true;
+      undo.enable = true;
+    };
+  };
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>ff";
+      action = "<cmd>Telescope find_files prompt_prefix=📂:<cr>";
+    }
+    {
+      mode = "n";
+      key = "<leader>fb";
+      action = "<cmd>Telescope buffers prompt_prefix=🔖:<cr>";
+    }
+    {
+      mode = "n";
+      key = "<leader>fg";
+      action = "<cmd>Telescope live_grep prompt_prefix=🪄:<cr>";
+    }
+    {
+      mode = "n";
+      key = "<leader>T";
+      action = "<cmd>Telescope<cr>";
+    }
     {
       mode = "n";
       key = "<leader>u";
@@ -76,5 +76,5 @@
       key = "<leader>gb";
       action = "<cmd>Telescope git_branches prompt_prefix=🎋:<cr>";
     }
-   ];
+  ];
 }
