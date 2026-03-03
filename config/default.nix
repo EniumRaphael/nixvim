@@ -15,7 +15,6 @@
     ./plugins/hardtime.nix
     ./plugins/hex.nix
     ./plugins/line.nix
-    ./plugins/lsp.nix
     ./plugins/markview.nix
     ./plugins/neocord.nix
     ./plugins/neogen.nix
@@ -27,6 +26,17 @@
     ./plugins/ts-comment.nix
     ./plugins/wakkatime.nix
     ./plugins/which-key.nix
+
+    ./plugins/lsp/default.nix
+    ./plugins/lsp/rust.nix
+    ./plugins/lsp/nix.nix
+    ./plugins/lsp/asm.nix
+    ./plugins/lsp/c-cpp.nix
+    ./plugins/lsp/python.nix
+    ./plugins/lsp/docker.nix
+    ./plugins/lsp/typescript.nix
+    ./plugins/lsp/yaml.nix
+    ./plugins/lsp/arduino.nix
   ];
   extraPlugins = [
     (pkgs.vimUtils.buildVimPlugin {
