@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       options = {
-        theme = "catppuccin";
+        theme = "auto";
         icons_enabled = true;
         globalstatus = true;
         section_separators = {
