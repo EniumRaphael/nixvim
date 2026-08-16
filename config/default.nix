@@ -5,7 +5,6 @@
     ./settings/general.nix
     ./settings/keys.nix
 
-    ./plugins/autopair.nix
     ./plugins/bufferline.nix
     ./plugins/clangd.nix
     ./plugins/completion.nix
@@ -37,6 +36,12 @@
     ./plugins/lsp/typescript.nix
     ./plugins/lsp/yaml.nix
     ./plugins/lsp/arduino.nix
+  ];
+  extraPackages = with pkgs; [
+    ripgrep
+    git
+    fzf
+    man
   ];
   extraPlugins = [
     (pkgs.vimUtils.buildVimPlugin {
