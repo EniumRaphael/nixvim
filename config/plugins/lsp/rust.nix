@@ -1,104 +1,112 @@
+{ pkgs, ... }:
+
 {
-plugins.lsp.servers.rust_analyzer = {
-  enable = true;
-  installRustc = true;
-  installCargo = true;
-  settings = {
-    check = {
-      command = "clippy";
-      useTidy = true;
-      features = "all";
-    };
-
-    cargo = {
-      rust = {
-        rustcSource = "discover";
-      };
-      allFeatures = true;
-      buildScripts = {
+  plugins = {
+    conform-nvim.settings = {
+      formatters_by_ft.rust = [ "rustfmt" ];
+      lsp.servers.rust_analyzer = {
         enable = true;
-      };
-      features = "all";
-      loadOutDirsFromCheck = true;
-    };
+        installRustc = true;
+        installCargo = true;
+        settings = {
+          check = {
+            command = "clippy";
+            useTidy = true;
+            features = "all";
+          };
 
-    diagnostics = {
-      disabled = [
-        "unlinked-file"
-        "unresolved-proc-macro"
-      ];
-      enable = [
-        "unresolved-proc-macro"
-      ];
-      warningsAsHint = [
-        "unresolved-proc-macro"
-      ];
-    };
+          cargo = {
+            rust = {
+              rustcSource = "discover";
+            };
+            allFeatures = true;
+            buildScripts = {
+              enable = true;
+            };
+            features = "all";
+            loadOutDirsFromCheck = true;
+          };
 
-    procMacro = {
-      enable = true;
-    };
+          diagnostics = {
+            disabled = [
+              "unlinked-file"
+              "unresolved-proc-macro"
+            ];
+            enable = [
+              "unresolved-proc-macro"
+            ];
+            warningsAsHint = [
+              "unresolved-proc-macro"
+            ];
+          };
 
-    imports = {
-      granularity = {
-        group = "module";
-      };
-      prefix = "self";
-      prefer = "shortest";
-    };
+          procMacro = {
+            enable = true;
+          };
 
-    inlayHints = {
-      lifetimeElisionHints = {
-        enable = "always";
-        useParameterNames = true;
-      };
-      typeHints = {
-        enable = true;
-        hideClosureInitialization = false;
-      };
-      parameterHints = {
-        enable = true;
-        hideClosureInitialization = false;
-      };
-      chainingHints = {
-        enable = true;
-      };
-      closureReturnTypeHints = {
-        enable = "always";
-      };
-      maxLength = 25;
-    };
+          imports = {
+            granularity = {
+              group = "module";
+            };
+            prefix = "self";
+            prefer = "shortest";
+          };
 
-    rustfmt = {
-      enable = true;
-      overrideCommand = [
-        "rustfmt"
-        "--edition"
-        "2021"
-        "--config"
-        "max_width=100"
-        "--config"
-        "tab_spaces=4"
-      ];
-    };
+          inlayHints = {
+            lifetimeElisionHints = {
+              enable = "always";
+              useParameterNames = true;
+            };
+            typeHints = {
+              enable = true;
+              hideClosureInitialization = false;
+            };
+            parameterHints = {
+              enable = true;
+              hideClosureInitialization = false;
+            };
+            chainingHints = {
+              enable = true;
+            };
+            closureReturnTypeHints = {
+              enable = "always";
+            };
+            maxLength = 25;
+          };
 
-    cargoTest = {
-      enable = true;
-      features = "all";
-    };
+          rustfmt = {
+            enable = true;
+            overrideCommand = [
+              "rustfmt"
+              "--edition"
+              "2021"
+              "--config"
+              "max_width=100"
+              "--config"
+              "tab_spaces=4"
+            ];
+          };
 
-    lens = {
-      enable = true;
-      run = {
-        enable = true;
-      };
-      debug = {
-        enable = true;
-      };
-      implementations = {
-        enable = true;
+          cargoTest = {
+            enable = true;
+            features = "all";
+          };
+
+          lens = {
+            enable = true;
+            run = {
+              enable = true;
+            };
+            debug = {
+              enable = true;
+            };
+            implementations = {
+              enable = true;
+            };
+          };
+        };
       };
     };
   };
-};
+  extraPackages = with pkgs; [ rustfmt ];
 }
