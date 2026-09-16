@@ -28,6 +28,7 @@
 
     ./plugins/lsp/default.nix
     ./plugins/lsp/rust.nix
+    ./plugins/lsp/dart.nix
     ./plugins/lsp/nix.nix
     ./plugins/lsp/asm.nix
     ./plugins/lsp/c-cpp.nix
