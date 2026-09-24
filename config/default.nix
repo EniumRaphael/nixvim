@@ -27,16 +27,6 @@
     ./plugins/which-key.nix
 
     ./plugins/lsp/default.nix
-    ./plugins/lsp/rust.nix
-    ./plugins/lsp/dart.nix
-    ./plugins/lsp/nix.nix
-    ./plugins/lsp/asm.nix
-    ./plugins/lsp/c-cpp.nix
-    ./plugins/lsp/python.nix
-    ./plugins/lsp/docker.nix
-    ./plugins/lsp/typescript.nix
-    ./plugins/lsp/yaml.nix
-    ./plugins/lsp/arduino.nix
   ];
   extraPackages = with pkgs; [
     ripgrep

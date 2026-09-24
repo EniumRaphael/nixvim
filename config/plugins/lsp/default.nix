@@ -1,4 +1,18 @@
 {
+  imports = [
+    ./arduino.nix
+    ./asm.nix
+    ./asm.nix
+    ./c-cpp.nix
+    ./dart.nix
+    ./docker.nix
+    ./go.nix
+    ./nix.nix
+    ./python.nix
+    ./rust.nix
+    ./typescript.nix
+    ./yaml.nix
+  ];
   plugins = {
     conform-nvim = {
       enable = true;
