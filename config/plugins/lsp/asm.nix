@@ -1,6 +1,6 @@
 {
   plugins.lsp.servers.asm_lsp = {
-    enable = true;
+    enable = false;
     filetypes = [
       "asm"
       "s"
@@ -16,4 +16,3 @@
     };
   };
 }
-
